@@ -1,0 +1,25 @@
+.roster-table {
+  width: 100%;
+  padding: 20px;
+}
+
+.roster-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.roster-table th,
+.roster-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.roster-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.roster-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,23 @@
+<div class="roster-table">
+  <h1>Conduit Roaster</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Total Articles</th>
+        <th>Total Likes</th>
+        <th>First Article Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of roster$ | async">
+        <td>
+          <a [routerLink]="['/profile', user.username]">{{ user.username }}</a>
+        </td>
+        <td>{{ user.totalArticles }}</td>
+        <td>{{ user.totalLikes }}</td>
+        <td>{{ user.firstArticleDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
